@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  
+
+      <ion-list>
+
+        <ion-item>
+          <ion-label fixed>Username</ion-label>
+          <ion-input type="text" value="" id="txt_nombre"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label fixed >Password</ion-label>
+          <ion-input type="password" id="txt_apellido"></ion-input>
+        </ion-item>
+        <button ion-button (click)="agregarDatos()">Button</button>
+      </ion-list>
+      <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+      
+      
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBkd9tK7EKWccNXDm9KjJ37ytgMhgbGZ3Y",
+          authDomain: "lunes4-bd19d.firebaseapp.com",
+          databaseURL: "https://lunes4-bd19d.firebaseio.com",
+          projectId: "lunes4-bd19d",
+          storageBucket: "lunes4-bd19d.appspot.com",
+          messagingSenderId: "870005481753"
+        };
+        firebase.initializeApp(config);
+      </script>
+      
+      <script src="ingreso.js"></script>
+</ion-content>
